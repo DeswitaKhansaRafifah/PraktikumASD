@@ -1,7 +1,6 @@
 package Jobsheet2;
 
 public class Mahasiswa06 {
-    
     String nama;
     String nim;
     String kelas;
@@ -19,7 +18,11 @@ public class Mahasiswa06 {
     }
 
     void updateIpk (double ipkBaru) {
-        ipk = ipkBaru;
+        if (ipkBaru >= 0.0 && ipkBaru <= 4.0) {
+            ipk = ipkBaru;
+        } else {
+            System.out.println("IPK tidak valid. Harus antara 0.0 dan 4.0");
+        }
     }
 
     String nilaiKinerja() {
