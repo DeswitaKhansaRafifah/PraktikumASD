@@ -4,11 +4,15 @@ import java.util.Scanner;
 public class MataKuliahDemo06 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        MataKuliah06[] arrayOfMatakuliah = new MataKuliah06[3];
+    
         String kode, nama, dummy;
         int sks, jumlahJam;
 
-        for (int i = 0; i < 3; i++) {
+        System.out.print("Masukkan jumlah mata kuliah: ");
+        int jumlah = Integer.parseInt(sc.nextLine());
+        MataKuliah06[] arrayOfMatakuliah = new MataKuliah06[jumlah];
+
+        for (int i = 0; i < jumlah; i++) {
             System.out.println("Masukkan Data Mata kuliah ke-" + (i + 1));
             System.out.print("Kode          : ");
             kode = sc.nextLine();
@@ -24,7 +28,7 @@ public class MataKuliahDemo06 {
             arrayOfMatakuliah[i] = new MataKuliah06(kode, nama, sks, jumlahJam);
         }
 
-         for (int i = 0; i < 3; i++) {
+         for (int i = 0; i < jumlah; i++) {
             System.out.println("Data Matakuliah ke-" + (i + 1));
             arrayOfMatakuliah[i].cetakInfo();
         }
