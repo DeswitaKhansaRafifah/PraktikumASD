@@ -15,6 +15,9 @@ public class MahasiswaMain06 {
         mhs1.updateIpk(3.60);
         mhs1.tampilkanInformasi();
 
+        Mahasiswa mhs2 = new Mahasiswa("Annisa Nabila", "2141720160", 3.25, "TI 2L");
+        mhs2.updateIpk(3.30);
+        mhs2.tampilkanInformasi();
     }
 }
 
@@ -23,6 +26,16 @@ class Mahasiswa {
     String nim;
     String kelas;
     double ipk;
+
+    public Mahasiswa () {
+    }
+
+    public Mahasiswa (String nm, String nim, double ipk, String kls) {
+        nama = nm;
+        this.nim = nim;
+        this.ipk = ipk;
+        kelas = kls;
+    }
 
     void tampilkanInformasi() {
         System.out.println("Nama: " + nama);
