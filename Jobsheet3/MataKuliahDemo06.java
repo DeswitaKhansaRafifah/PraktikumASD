@@ -21,17 +21,12 @@ public class MataKuliahDemo06 {
             dummy = sc.nextLine();
             jumlahJam = Integer.parseInt(dummy);
             System.out.println("------------------------------");
-
             arrayOfMatakuliah[i] = new MataKuliah06(kode, nama, sks, jumlahJam);
         }
 
-        for (int i = 0; i < 3; i++) {
+         for (int i = 0; i < 3; i++) {
             System.out.println("Data Matakuliah ke-" + (i + 1));
-            System.out.println("Kode       : " + arrayOfMatakuliah[i].kode);
-            System.out.println("Nama       : " + arrayOfMatakuliah[i].nama);
-            System.out.println("Sks        : " + arrayOfMatakuliah[i].sks);
-            System.out.println("Jumlah Jam : " + arrayOfMatakuliah[i].jumlahJam);
-            System.out.println("------------------------------");
+            arrayOfMatakuliah[i].cetakInfo();
         }
 
         System.out.println("== Tambah Data Matakuliah Baru ==");
@@ -47,10 +42,6 @@ public class MataKuliahDemo06 {
         arrayOfMatakuliah[0].tambahData(kode, nama, sks, jumlahJam);
 
         System.out.println("Data ke-1 setelah ditambah:");
-        System.out.println("Kode       : " + arrayOfMatakuliah[0].kode);
-        System.out.println("Nama       : " + arrayOfMatakuliah[0].nama);
-        System.out.println("Sks        : " + arrayOfMatakuliah[0].sks);
-        System.out.println("Jumlah Jam : " + arrayOfMatakuliah[0].jumlahJam);
-        System.out.println("------------------------------");
+        arrayOfMatakuliah[0].cetakInfo();
     }
 }
