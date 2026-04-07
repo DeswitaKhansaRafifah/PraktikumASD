@@ -41,8 +41,7 @@ public class MahasiswaDemo06 {
         System.out.println("Data yang sudah terurut menggunakan INSERTION SORT (DESC)");
         list.insertionSort();
         list.tampil();
-
-        list.selectionSort(); 
+ 
         list.tampil();
         // melakukan pencarian data Binary
         System.out.println("------------------------------");
