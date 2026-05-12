@@ -93,6 +93,7 @@ public class DoubleLinkedList06 {
             System.out.println("Linked List kosong.");
             return;
         }
+        
         System.out.println("Data berhasil dihapus.");
         head.data.tampil();
 
@@ -109,6 +110,7 @@ public class DoubleLinkedList06 {
             System.out.println("Linked List kosong.");
             return;
         }
+
         System.out.println("Data berhasil dihapus.");
         tail.data.tampil();
 
