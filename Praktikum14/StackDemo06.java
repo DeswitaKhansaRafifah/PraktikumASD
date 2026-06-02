@@ -21,7 +21,7 @@ public class StackDemo06 {
         Book06 temp2 = books.pop();
 
         if (temp2 != null) {
-            System.out.println(temp.toString());
+            System.out.println(temp2.toString());
         }
 
         for (Book06 book : books) {
